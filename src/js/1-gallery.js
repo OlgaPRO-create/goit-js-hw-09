@@ -81,11 +81,6 @@ const imgGallery = images.map(({ preview, original, description }) =>
 .join('');
 
 list.innerHTML = imgGallery;
-document.querySelectorAll(`.gallery-link`).forEach((link) =>
-link.addEventListener('click', (event) => {
-    event.preventDefault();
-})
-);
 
 import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
